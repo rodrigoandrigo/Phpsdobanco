@@ -12,7 +12,7 @@ class Autentificacao {
     }
 
     protected function validaUser() {
-        $sql = pg_query("SELECT * FROM perfil WHERE email = '{$login}' AND senha = '{$senha}' AND status_pessoa='A' ");
+        $sql = pg_query("SELECT * FROM perfil WHERE email = '{$login}' AND senha = '{$senha}' ");
         $rtn = parent::Executar($sql);
 
         if ($rtn == '0') {

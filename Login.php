@@ -1,5 +1,8 @@
 <?php
 
+$login = isset($_POST['email']);
+$senha = isset($_POST['senha']);
+
 class Autentificacao {
 
     public function __constructor($login, $senha) {

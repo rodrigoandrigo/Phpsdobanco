@@ -12,11 +12,11 @@ class Autentificacao {
     }
 
     protected function validaUser() {
-        $sql = "select para autenticacao";
+        $sql = pg_query("SELECT * FROM perfil WHERE email = '{$login}' AND senha = '{$senha}' AND status_pessoa='A' ");
         $rtn = parent::Executar($sql);
 
         if ($rtn == '0') {
-            //nenhum usuario foi encontrado
+            echo "Você não pode logar-se! Este usuário ou senha estão inválidos!"; //nenhum usuario foi encontrado
         } else {
             //Usuario encontrado
             //Você pode dar um fetch alguma coisa aqui para ver se ele está ou nao bloqueado;

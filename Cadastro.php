@@ -11,4 +11,9 @@ $cep = isset($_POST['cep']);
 $sql = "insert into perfil(senha,email, endereco, endereco2,cidade,estado,cep) values ('$senha', '$email','$endereco','$inputAddress2','$cidade','$estado','$cep')";
 
 $res = pg_exec($conexao1, $sql);
-pg_query($conexao1, $sql);
+$pg_query($conexao1, $sql);
+if ($pg_query) {
+    echo 'Cadastro realizado com sucesso';
+} else {
+    echo 'Nao foi possivel realizar o cadastro';
+}

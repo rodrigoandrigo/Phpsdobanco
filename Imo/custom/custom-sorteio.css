@@ -1,0 +1,69 @@
+section div div.alinhar{
+    
+}
+
+section div div img.img{
+    max-height: 320px;
+}
+
+section div div img{
+    display: flex;
+    align-items: center;
+}
+
+
+section div{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+section div div div a{
+    
+    color: #aaa;    
+}
+
+section div div div a.ticket{
+    color: #19e846;
+    background: #eee;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+}
+
+.aposta{
+    border-radius: 0.2rem;
+    background: #aaa;
+    padding: .29rem;
+    position: relative;
+}
+
+
+
+footer div a{
+    color: #bbb;
+}
+
+footer div {
+    color: #bbb;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    
+    bottom: 0;
+    left: 0;
+    margin-top: 1em;
+}
+
+
+@media (max-width:768px){section div div div h2.h2{
+    font-size: 1.3rem;
+    
+    }section div div div p.h6,section div div div a{
+        font-size: 0.7rem;
+    }section div div div div button.btn{
+    font-size: 0.6rem;
+    }section div table thead tr th,section div table tbody tr td,section div table tbody tr th{
+        font-size: .5rem;
+    }
+}                                                                                                                         
